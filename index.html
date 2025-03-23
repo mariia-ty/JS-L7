@@ -6,19 +6,19 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
     <input type="number" id="minPrice" placeholder="Enter min Price" />
     <input type="number" id="maxPrice" placeholder="Enter max Price" />
     <button onclick="filteredProducts()">Filter</button>
-    <script id="products-template" type="text/x-handlebars-template">
-      <!-- {{#if isadmin}}
+    <script id="products-template" type="text/x-handlebars-template">-->
+    <!-- {{#if isadmin}}
             <p>You are admin</p>
         {{else}}
             <p>You are not admin</p>
         {{/if}}
         <h1>{{title}}</h1>
         <p>{{description}}</p> -->
-      <!-- <ul>
+    <!-- <ul>
         {{#each users}}
          <li>{{name}}
             -
@@ -29,7 +29,7 @@
             {{/if}}</li>
         {{/each}}
       </ul> -->
-      <!-- <ul>
+    <!-- <ul>
         {{#each tasks}}
          <li>{{title}}
             -
@@ -40,16 +40,20 @@
             {{/if}}</li>
         {{/each}}
       </ul> -->
-      <ul>
+    <!-- <ul>
         {{#each products}}
           <li>{{name}}
             - $ {{price}}</li>
         {{/each}}
       </ul>
     </script>
-    <div id="products-list"></div>
-
+    <div id="products-list"></div> -->
     <!-- <div id="tasks-container"></div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+    <script id="template" type="text/x-handlebars-template">
+      <p>{{adress.city}}, {{adress.street}}</p>
+    </script>
     <script src="scripts.js"></script>
   </body>
 </html>

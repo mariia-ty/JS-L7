@@ -1,5 +1,5 @@
-const source = document.getElementById("products-template").innerHTML;
-const template = Handlebars.compile(source);
+// const source = document.getElementById("products-template").innerHTML;
+// const template = Handlebars.compile(source);
 /*const context = { title: "Hello", description: "World" }; */
 /*const context = {
   users: [
@@ -27,7 +27,7 @@ const context = {
   ],
 };
 */
-
+/*
 const products = [
   { name: "Notebook", price: 2500 },
   { name: "Phone", price: 1500 },
@@ -52,3 +52,13 @@ function filteredProducts() {
 }
 
 renderProducts(products);
+*/
+
+const data = { adress: { city: "Kiyv", street: "Central"} };
+
+const template = Handlebars.compile(document.getElementById("template").innerHTML);
+
+
+const html = template(data);
+document.body.innerHTML += html;
+
